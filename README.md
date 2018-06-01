@@ -5,8 +5,8 @@
 | ----- | ------------- | ------------- | -------- | -------- | ------ |
 | 1. | 1  | - | - | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/p.gif?raw=true" width=200> | Only set P value as 1. The car started to veer off immediately within 3-4 seconds |
 | 2. | 1  | - | 1 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pd.gif?raw=true" width=200> | Only set P and D values as 1. The car started to veer off after 8 seconds | 
-| 3. | 0.2  | - | 3.0 | <video src="./assets/pd-works.mp4" width="200" height="200" controls preload></video> | works  |
-| 4. | P  | I | D | Demo |   |
+| 3. | 0.2  | - | 3.0 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pd-works.gif?raw=true" width=200> | After using the PD values from the examples in the lessons, the car was on the track and running without any issues, it will take hard turns when an actual turn comes  |
+| 4. | 0.2  | - | 3.0 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pid-works.gif?raw=true" width=200> | Same as last scenario  |
 
 
 
