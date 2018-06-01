@@ -1,5 +1,14 @@
 # CarND-Controls-PID
-Self-Driving Car Engineer Nanodegree Program
+
+
+| Scenario# | P  | I | D | Demo | Comments | 
+| ----- | ------------- | ------------- | -------- | -------- | ------ |
+| 1. | 1  | - | - | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/p.gif?raw=true" width=200> | Only set P value as 1. The car started to veer off immediately within 3-4 seconds |
+| 2. | 1  | - | 1 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pd.gif?raw=true" width=200> | Only set P and D values as 1. The car started to veer off after 8 seconds | 
+| 3. | 0.2  | - | 3.0 | <video src="./assets/pd-works.mp4" width="200" height="200" controls preload></video> | works  |
+| 4. | P  | I | D | Demo |   |
+
+
 
 ---
 
