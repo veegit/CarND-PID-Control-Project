@@ -1,5 +1,21 @@
 # CarND-Controls-PID
-Self-Driving Car Engineer Nanodegree Program
+
+## Explanation
+1. P - As in propotional control. It will simply allow you to steer the car in propotion to cross track error. One can motivation from a human driver starting to learn driving. If the human driver veers away from track, he/she will make adjustments propotional to how far the car has drifted away from center. Even to point of over compensating.
+2. D - Derivative Control. This control allows you fine tune your steering according to how much error you have reduced over time. This will reduce oscillations, and fine-tune your steering. Technically it is a difference of cross track error between two timestamps divided by the time window.
+3. I - Integral Control - It is used to reduce the "systemcatic bias" when your car due to external factors may drift away from center. Basically, we track the cumulative cross track error and if over a period of time it is increasing then we apply this factor to compensate.
+
+## Experiments
+| # | P  | I | D | Demo | Comments | 
+| ----- | ------------- | ------------- | -------- | -------- | ------ |
+| 1. | 1  | - | - | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/p.gif?raw=true" width=800> | Only set P value as 1. The car started to veer off immediately within 3-4 seconds |
+| 2. | 1  | - | 1 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pd.gif?raw=true" width=800> | Only set P and D values as 1. The car started to veer off after 8 seconds | 
+| 3. | 0.2  | - | 3.0 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pd-works.gif?raw=true" width=800> | After using the PD values from the examples in the lessons, the car was on the track and running without any issues, it will take hard turns when an actual turn comes  |
+| 4. | 0.2  | 0.004 | 3.0 | <img src="https://raw.githubusercontent.com/veegit/CarND-PID-Control-Project/doc/assets/pid-works.gif?raw=true" width=800> | Same as last scenario  |
+
+## Other approaches
+I didn't explore other algorithms like twiddle due to good outcome from PD/PID inputs. 
+
 
 ---
 
